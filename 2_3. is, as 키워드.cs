@@ -1,4 +1,5 @@
 // is as키워드의 이해
+// is as 키워드는 어떤 데이터에 논리식을 세울 수 있다.
 
 using System;
 
@@ -41,5 +42,7 @@ class HelloClass
         {
             Console.WriteLine("Weapon Interface is included.");
         }
+
+        
     }
 }
