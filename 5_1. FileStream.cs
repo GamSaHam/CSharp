@@ -1,3 +1,9 @@
+///<summary>
+/// FileStream 관한 예제 입니다.
+// 쓰기, 읽기
+///</summary>
+
+
 using System;
 using System.IO;
 using System.Text;
@@ -39,10 +45,6 @@ class Test
             }
         }
     }
-
-
-
-    
 
     private static void AddText(FileStream fs, string value)
     {
