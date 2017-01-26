@@ -1,4 +1,9 @@
-// ArrayList 활용
+///<summary>
+/// ArrayList의 활용
+///</summary>
+
+
+///<remark> 1. 기본
 
 using System;
 using System.Collections; // ArrayList
@@ -24,7 +29,7 @@ class HelloWorld
     {
         ArrayList array_list = new ArrayList();
 
-        array_list.AddRange(new Car[] { // 초기화
+        array_list.AddRange(new Car[] { // AddRange
             new Car("1123"),
             new Car("2345"),
             new Car("6542")
@@ -32,18 +37,20 @@ class HelloWorld
 
         Console.WriteLine("array_list Count is :{0}", array_list.Count);
 
-        array_list.Insert(array_list.Count, new Car("5504")); // 추가
+        array_list.Insert(array_list.Count, new Car("5504")); // Insert
 
-        foreach (Car car in array_list) //출력
+        Console.WriteLine("index:{0}", array_list.IndexOf(array_list[1])); // Indexof
+
+        foreach (Car car in array_list) // 출력
         {
             car.printAll();
         }
     }
 };
 
+///</remark>
 
-/// ArrayList 는 어떠한 자료형이든 추가가능 Object형이기 때문에.
-// ArrayList 활용 2
+/// <remark>1. ArrayList의 활용
 
 using System;
 using System.Collections;
@@ -123,4 +130,8 @@ class HelloWorld
         cars.printAll();
     }
 };
-///
+
+///</remark>
+
+
+
